@@ -1,0 +1,321 @@
+<html lang="es">
+    <head>
+        <style>
+            h3 {
+                margin-bottom: 0;
+            }
+            h2 {
+                color: rgb(255, 255, 255);
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+            h1 {
+                margin: auto;
+            }
+            p {
+                margin-top: 2px;
+            }
+            body { /*background: rgb(27, 29, 37);*/
+                background-size: 100%;
+                background-image: url("img/BackGround.png");
+                color: rgb(218, 218, 218);
+                background-attachment: fixed;
+                font-size: 17px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            @media (max-width: 1000px) {
+                body{
+                    background-size: 100vh;
+                    background-image: none;
+                    background-color: #2b3138;
+                };
+            }
+            .inbox {
+                padding: 10px 30px;
+                background-color: rgb(46, 46, 46);
+                margin: 10px;
+                border-radius: 6px;
+                flex-grow: 1;
+                min-width: 300px;
+            }
+            @media (max-width: 1000px){
+                .inbox{
+                    min-width: 0
+                }
+            }
+            .row{
+                display: flex;
+            }
+            @media (max-width: 1000px){
+                .row{
+                    display: block;
+                }
+            }
+            .margenBox{
+                margin: 10px;
+            }
+            
+            ul{
+                padding-left: 20px;
+                font-size: large;
+                margin-top: 7px;
+                margin-bottom: 7px;
+            }
+            li{
+                margin-bottom: 7px;
+            }
+            small{
+                font-size: smaller;
+                color: #a2a1a7;
+            }
+            .content{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                padding: 10px;
+                border: 0;
+                width: 1000px;
+                border-radius: 20px;
+                display: block;
+                background-color: rgb(21, 21, 23);
+            }
+            @media (max-width: 1000px){
+                .content{
+                    width: auto;
+                }
+            }
+            .verticalBox{
+                display: flex;
+                flex-grow: 1;
+                flex-flow: column;
+                
+            }
+
+            header{
+                display: flex;
+            }
+
+            .xb{
+                color: #4B2FDE;
+            }
+            .xt{
+                color: #FF8C00;
+            }
+            .discord{
+                height: 100%;
+                width: 400px;
+            }
+            .headBox{
+                margin-left: -18px;
+                background-image: url("img/end.png");
+                padding: 6px 13px;
+                border-radius: 10px;
+                background-attachment: fixed;
+                background-size: 30vmax;
+                text-shadow:
+                        2px 2px 0 black,
+                        -2px 2px 0 black,
+                        2px -2px 0 black,
+                        -2px -2px 0 black;
+                text-decoration: none;
+                font-family: 'Ink Free', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            @media (max-width: 1000px){
+                .discord{
+                    width: 100%;
+                    height: auto;
+                    min-height: 300px;
+                    display: flex;
+                    flex-grow: 1;
+                }
+                .headBox{
+                    width: 150%;
+                    margin-right: -18px;
+                }
+                .xb{
+                    font-size: 55px;
+                }
+                .xt{
+                    font-size: 55px;
+                }
+            }
+
+            code{
+                background-color: rgb(66, 66, 66);
+                border-radius: 4px;
+                padding-left: 6px;
+                padding-right: 6px;
+                padding-top: 1px;
+                font-family: 'JetBrains Mono', Consolas, Monospaced, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+                color: #ffffff;
+            }
+
+            .copy{
+                transition: background-color 0.3s ease;
+            }
+            .copy:hover{
+                background-color: #808080;
+            }
+            .imageFooter {
+                height: 100%;
+                padding: 0;
+            }
+            @media (max-width: 1000px){
+                .imageFooter {
+                    border-radius: 6px;
+                    overflow: hidden;
+                    height: auto;
+                }
+                #imgRow{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        </style>
+
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Servidor Anaquirco 1.21.1 - XBXT" />
+        <meta name="description" content="Un servidor anárquico semi-vanilla donde no tendrá reinicios y con un mundo imitado, donde podrás  hacer lo que quieres sin reglas ni restricciones de ningún tipo." />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://xbxt.xyz"/>
+        <meta property="og:title" content="Servidor Anaquirco 1.21.1 - XBXT" />
+        <meta property="og:description" content="Un servidor anárquico semi-vanilla donde no tendrá reinicios y con un mundo imitado, donde podrás  hacer lo que quieres sin reglas ni restricciones de ningún tipo." />
+        <meta property="og:image" content="https://xbxt.xyz/src/img/Banner.png" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://xbxt.xyz" />
+        <meta property="twitter:title" content="Servidor Anaquirco 1.21.1 - XBXT" />
+        <meta property="twitter:description" content="Un servidor anárquico semi-vanilla donde no tendrá reinicios y con un mundo imitado, donde podrás  hacer lo que quieres sin reglas ni restricciones de ningún tipo." />
+        <meta property="twitter:image" content="https://xbxt.xyz/img/Banner.png" />
+
+        <link rel="icon" type="image/jpg" href="img/server-icon.png">
+        <title>XBXT</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <main class="content">
+            <header class="inbox">
+                <a class="headBox" href="index.html">
+                    <h1>
+                        <span class="xb">XB</span>
+                        <span class="xt">XT</span>
+                    </h1>
+                </a>
+            </header>
+            <section class="row">
+                <article  class="inBox">
+                    <h2>Descrición</h2>
+                    <p>
+                        Un servidor anárquico semi-vanilla donde no tendrá reinicios y con un mapa ilimitados, donde podrás
+                        hacer lo que quieres sin reglas ni restricciones de ningún tipo.
+                    </p>
+                </article>
+                <article  class="inBox">
+                    <h2>Unete Al Servidor</h2>
+                    <ul>
+                        <li>
+                            Java:
+                            <code class="copy">xbxt.xyz</code>
+                        </li>
+                        <li>
+                            Bedrock:
+                            <code class="copy">xbxt.xyz:19132</code>
+                        </li>
+                    </ul>
+                    <small>
+                        Ip alternativa: 
+                        <code class="copy" value="cereshost.xyz">cereshost.xyz</code>
+                    </small>
+                </article>
+            </section>
+            <section class="row">
+                <article class="margenBox" >
+                    <iframe class="discord" src="https://discord.com/widget?id=1327001386142924822&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </article>
+                <div class="verticalBox">
+                    <article  class="inBox">
+                        <h2>ESTADÍSTICAS</h2>
+                        <ul>
+                            <li id="uniqueUsers"></li>
+                            <li id="activeTime"></li>
+                            <li id="onlinePlayer"></li>
+                            <li id="sizeWorlds"></li>
+                        </ul>
+                        <small>
+                            Estadísticas a tiempo real
+                        </small>
+                    </article>
+                    <article  class="inBox">
+                        <h2>CARACTERÍSTICA</h2>
+                        <h3>Frame dupe</h3>
+                        <p id="frameDupe">
+                            Puedes duplicar con un item frame y con un item. Actualmente, el fame dupe está al N/A%
+                            de probabilidad
+                        </p>
+                        <h3>Anárquico Puro</h3>
+                        <p>
+                            Puedes hacer lo que tú quieras sin limitaciones alguna
+                        </p>
+                        <h3>Abierto Para Todos</h3>
+                        <p>
+                            Todos los jugadores se puede unir como jugadores bedrock como de java y si eres
+                            premium y no premium
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section class="row"  id="imgRow">
+                <img src="img/Captura1.png"
+                     alt="Captura de pantalla del servidor"
+                     class="inbox imageFooter"
+                     title="Portal del nether de xbxt.xyz"
+                >
+                <img src="img/Captura2.png"
+                     alt="Captura de pantalla del servidor"
+                     class="inbox imageFooter"
+                     title="Portal del nether de xbxt.xyz"
+                >
+            </section>
+        </main>
+    </body>
+    <script>
+        async function obtenerEstado() {
+            try {
+                let response = await fetch("https://xbxt.xyz:8443/statistic");
+                let data = await response.json();
+                document.getElementById("uniqueUsers").textContent = `${data.uniqueUsers} jugadores unicos`;
+                let hour = convertirToHour(data.activeTime);
+                document.getElementById("activeTime").textContent = `Tiempo activo durante ${Math.round(hour/24)} dias y ${hour%24} horas`
+                document.getElementById("onlinePlayer").textContent = `${data.onlinePlayer} jugadores conectados de ${data.maxPlayers}`
+                document.getElementById("sizeWorlds").textContent = `${Math.round(data.sizeWorlds/(1024.0 * 1024))} MB de mundo`
+                document.getElementById("frameDupe").textContent = document.getElementById("frameDupe").textContent.replace("N/A", data.frameDupe*100)
+            } catch (error) {
+                console.error("Error al obtener el estado:", error);
+            }
+
+        }
+        obtenerEstado();
+        setInterval(obtenerEstado, 1000*60);
+
+        function convertirToHour(ms) {
+            let segundos = Math.floor(ms / 1000);
+            let minutos = Math.floor(segundos / 60);
+            return Math.floor(minutos / 60)
+        }
+        document.querySelectorAll(".copy").forEach((button) => {
+            button.addEventListener("click", () => {
+                navigator.clipboard.writeText(button.textContent).then(() => {
+                    button.style.backgroundColor = "#00b62f";
+
+                    setTimeout(() => {
+                        button.style.backgroundColor = "";
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</html>
