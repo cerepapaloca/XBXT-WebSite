@@ -9,7 +9,7 @@
         <meta property="og:url" content="https://xbxt.xyz"/>
         <meta property="og:title" content="Servidor Anaquirco 1.21.1 - XBXT" />
         <meta property="og:description" content="Un servidor anárquico semi-vanilla donde no tendrá reinicios y con un mundo imitado, donde podrás  hacer lo que quieres sin reglas ni restricciones de ningún tipo." />
-        <meta property="og:image" content="https://xbxt.xyz/src/img/Banner.png" />
+        <meta property="og:image" content="https://xbxt.xyz/img/Banner.png" />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
@@ -25,17 +25,21 @@
     </head>
     <body>
         <main class="content">
-            <header class="inbox">
+            <header class="inbox" id="header">
                 <a class="headBox" href="index.html">
                     <h1>
                         <span class="xb">XB</span>
                         <span class="xt">XT</span>
                     </h1>
                 </a>
+                <nav>
+                    <a href="https://minecraft-mp.com/server-s339858" class="subBox navButton">Vote</a>
+                    <a href="commands/index.html" class="subBox navButton">Commandos</a>
+                </nav>
             </header>
             <section class="row">
                 <article  class="inBox">
-                    <h2>Descrición</h2>
+                    <h2>Descripción</h2>
                     <p>
                         Un servidor anárquico semi-vanilla donde no tendrá reinicios y con un mapa ilimitados, donde podrás
                         hacer lo que quieres sin reglas ni restricciones de ningún tipo.
@@ -46,16 +50,16 @@
                     <ul>
                         <li>
                             Java:
-                            <code class="copy">xbxt.xyz</code>
+                            <code class="subBox copy">xbxt.xyz</code>
                         </li>
                         <li>
                             Bedrock:
-                            <code class="copy">xbxt.xyz:19132</code>
+                            <code class="subBox copy">xbxt.xyz:19132</code>
                         </li>
                     </ul>
                     <small>
                         Ip alternativa: 
-                        <code class="copy" value="cereshost.xyz">cereshost.xyz</code>
+                        <code class="subBox copy" value="cereshost.xyz">cereshost.xyz</code>
                     </small>
                 </article>
             </section>
@@ -65,7 +69,7 @@
                 </article>
                 <div class="verticalBox">
                     <article  class="inBox">
-                        <h2>ESTADÍSTICAS</h2>
+                        <h2>Estadísticas</h2>
                         <ul>
                             <li id="uniqueUsers"></li>
                             <li id="activeTime"></li>
@@ -77,7 +81,7 @@
                         </small>
                     </article>
                     <article  class="inBox">
-                        <h2>CARACTERÍSTICA</h2>
+                        <h2>Características</h2>
                         <h3>Frame dupe</h3>
                         <p id="frameDupe">
                             Puedes duplicar con un item frame y con un item. Actualmente, el fame dupe está al N/A%
@@ -95,17 +99,23 @@
                     </article>
                 </div>
             </section>
-            <section class="row"  id="imgRow">
-                <img src="img/Captura1.png"
-                     alt="Captura de pantalla del servidor"
-                     class="inbox imageFooter"
-                     title="Portal del nether de xbxt.xyz"
-                >
-                <img src="img/Captura2.png"
-                     alt="Captura de pantalla del servidor"
-                     class="inbox imageFooter"
-                     title="Portal del nether de xbxt.xyz"
-                >
+            <section class="row">
+                <a class="inbox refImg" href="img/Captura1.png">
+                    <img src="img/Captura1.png"
+                         alt="Captura de pantalla del servidor"
+                         class="imageInBox"
+                         title="Portal del nether de xbxt.xyz"
+                         loading="lazy"
+                    >
+                </a>
+                <a class="inbox refImg" href="img/Captura2.png">
+                    <img src="img/Captura2.png"
+                         alt="Captura de pantalla del servidor"
+                         title="Portal del nether de xbxt.xyz"
+                         class="imageInBox"
+                         loading="lazy"
+                    >
+                </a>
             </section>
         </main>
     </body>

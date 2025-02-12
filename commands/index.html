@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comandos</title>
+    <link rel="icon" type="image/jpg" href="../img/server-icon.png">
+    <link rel="stylesheet" href="../css/styles.css" >
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 2px solid #0c0c0c;
+            padding: 6px;
+            text-align: left;
+            text-overflow: ellipsis;
+            background-color: #262626;
+        }
+        th {
+            background-color: #181818;
+        }
+        @media (max-width: 1000px) {
+            .inbox{
+                padding: 0;
+            }
+            h2{
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="content">
+        <header class="inbox">
+            <a class="headBox" href="../index.html">
+                <h1>
+                    <span class="xb">XB</span>
+                    <span class="xt">XT</span>
+                </h1>
+            </a>
+        </header>
+        <section class="row">
+            <article class="inbox">
+                <h2>Lista De Comandos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Description</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-body">
+
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+
+</body>
+<script src="../javascript/command.js"></script>
+</html>
