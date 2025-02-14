@@ -33,8 +33,8 @@
                     </h1>
                 </a>
                 <nav>
-                    <a href="https://minecraft-mp.com/server-s339858" class="subBox navButton">Vote</a>
-                    <a href="commands/index.html" class="subBox navButton">Commandos</a>
+                    <a class="subBox navButton" href="https://minecraft-mp.com/server-s339858" >Vote</a>
+                    <a class="subBox navButton" href="commands/index.html">Commandos</a>
                 </nav>
             </header>
             <section class="row">
@@ -64,8 +64,8 @@
                 </article>
             </section>
             <section class="row">
-                <article class="margenBox" >
-                    <iframe class="discord" src="https://discord.com/widget?id=1327001386142924822&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <article class="inbox" id="discordBox">
+                    <iframe class="discord" src="https://discord.com/widget?id=1327001386142924822&theme=dark"  content="width=device-width, initial-scale=1.0" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </article>
                 <div class="verticalBox">
                     <article  class="inBox">
@@ -117,7 +117,61 @@
                     >
                 </a>
             </section>
+            <section class="row">
+                <a class="inbox refImg" href="img/Captura4.png">
+                    <img src="img/Captura4.png"
+                         alt="Captura de pantalla del servidor"
+                         title="Portal del nether de xbxt.xyz"
+                         class="imageInBox"
+                         loading="lazy"
+                    >
+                </a>
+                <div class="inbox">
+                    <label for="searchInput">
+                    </label>
+                    <span id="inputSuper">
+                        <input type="text" id="searchInput" placeholder="Buscar Usuario...">
+                        <span id="noFoundBox">No se encontró ese usuario</span>
+                    </span>
+                    <button onclick="buscar()">Buscar</button>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Estadística</th>
+                            <th>Cantidad</th>
+                        </tr>
+                        </thead>
+                        <tbody id="statsTableBody">
+                        <tr>
+                            <td>Bloques Rotos</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Bloques Colocados</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Muertes</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Mods Eliminados</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Eliminaciones</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Tiempo Jugado</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Distancia Caminada</td><td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Distancia Volada</td><td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </main>
     </body>
     <script src="javascript/home.js"></script>
+    <script src="javascript/searchUser.js"></script>
 </html>
