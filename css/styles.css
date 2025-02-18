@@ -22,6 +22,7 @@ body { /*background: rgb(27, 29, 37);*/
 }
 @media (max-width: 1000px) {
     body{
+        font-size: 40px;
         background-size: 100vh;
         background-image: none;
         background-color: #2b3138;
@@ -46,7 +47,6 @@ body { /*background: rgb(27, 29, 37);*/
 
 ul{
     padding-left: 20px;
-    font-size: large;
     margin-top: 7px;
     margin-bottom: 7px;
 }
@@ -92,7 +92,6 @@ header{
 .discord{
     height: 100%;
     width: 100%;
-    background: #738ADB
 }
 #discordBox{
     overflow: hidden;
@@ -121,7 +120,7 @@ header{
     .discord{
         width: 100%;
         height: auto;
-        min-height: 300px;
+        min-height: 400px;
         display: flex;
         flex-grow: 1;
     }
@@ -139,9 +138,10 @@ code{
 }
 .subBox{
     background-color: rgb(66, 66, 66);
-    border-radius: 8px;
-    padding-left: 6px;
-    padding-right: 6px;
+    border-radius: 0.7vh;
+    padding-left: 8px;
+    min-height: 50px;
+    padding-right: 8px;
     padding-top: 1px;
     transition: background-color 0.3s ease;
 }
@@ -164,10 +164,10 @@ code{
 }
 .navButton{
     text-decoration: none;
-    font-size: 20px;
     padding: 7px;
     margin: 4px;
     color: rgb(218, 218, 218);
+    height: 30px;
 }
 nav{
     margin-left: auto;
@@ -176,6 +176,17 @@ nav{
 }
 #header{
     padding: 0;
+}
+button{
+    background-color: #2a2a2a;
+    border: #5e5e5e solid 3px;
+    border-radius: 1vh;
+    color: white;
+    padding: 7px;
+    margin: 4px;
+    font-size: inherit;
+    align-content: center;
+    transition-duration: 400ms;
 }
 @media (max-width: 1000px){
     nav{
@@ -193,17 +204,7 @@ nav{
         height: auto;
     }
 }
-button{
-    background-color: #2a2a2a;
-    border: #5e5e5e solid;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-    padding: 7px;
-    margin: 7px;
-    align-content: center;
-    transition-duration: 400ms;
-}
+
 button:hover{
     background-color: #484848;
 }
@@ -232,11 +233,11 @@ button:active{
     color: white;
 }
 input{
-    font-size: 16px;
     color: white;
-    border-radius: 4px;
+    border-radius: 1vh;
     width: min-content;
     border: #000000 solid;
+    font-size: inherit;
     padding: 2px 0 2px 4px;
     background-color: #111111;
 }
@@ -245,6 +246,7 @@ input:focus{
 }
 table {
     width: 100%;
+    font-size: inherit;
     border-collapse: collapse;
 }
 th, td {

@@ -12,9 +12,9 @@ async function buscar() {
         // Mostrar resultados
         //const row = document.createElement("tr");
         let totalBlockBroken = 0;
-        if (data.stats["minecraft:broken"]) {
-            for (const bloque in data.stats["minecraft:broken"]) {
-                let cantidad = data.stats["minecraft:broken"][bloque];
+        if (data.stats["minecraft:mined"]) {
+            for (const bloque in data.stats["minecraft:mined"]) {
+                let cantidad = data.stats["minecraft:mined"][bloque];
                 totalBlockBroken += cantidad;
             }
             agregarFila("Bloques Rotos", totalBlockBroken);
@@ -23,14 +23,14 @@ async function buscar() {
         }
         let totalBlockPlace = 0;
 
-        if (data.stats["minecraft:mined"]) {
-            for (const bloque in data.stats["minecraft:mined"]) {
-                let cantidad = data.stats["minecraft:mined"][bloque];
+        if (data.stats["minecraft:used"]) {
+            for (const bloque in data.stats["minecraft:used"]) {
+                let cantidad = data.stats["minecraft:used"][bloque];
                 totalBlockPlace += cantidad;
             }
-            agregarFila("Bloques Colocados", totalBlockPlace);
+            agregarFila("Items Usados/Colocados", totalBlockPlace);
         } else {
-            agregarFila("Bloques Colocados", "0")
+            agregarFila("Items Usados/Colocados", "0")
         }
 
         if (data.stats["minecraft:custom"]) {
