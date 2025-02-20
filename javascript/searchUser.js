@@ -33,6 +33,16 @@ async function buscar() {
             agregarFila("Items Usados/Colocados", "0")
         }
 
+        if (data.stats["minecraft:killed"]) {
+            if (data.stats["minecraft:killed"]["minecraft:player"]) {
+                agregarFila("Eliminaciones", data.stats["minecraft:killed"]["minecraft:player"])
+            } else {
+                agregarFila("Eliminaciones", "0")
+            }
+        }else {
+            agregarFila("Eliminaciones", "0")
+        }
+
         if (data.stats["minecraft:custom"]) {
             if (data.stats) {
                 agregarFila("Muertes", data.stats["minecraft:custom"]["minecraft:deaths"]);
@@ -43,14 +53,6 @@ async function buscar() {
                 agregarFila("Mods Eliminados", data.stats["minecraft:custom"]["minecraft:mob_kills"])
             } else {
                 agregarFila("Mods Eliminados", "0")
-            }
-
-            if (data.stats["minecraft:killed"]) {
-                if (data.stats["minecraft:killed"]["minecraft:player"]) {
-                    agregarFila("Eliminaciones", data.stats["minecraft:killed"]["minecraft:player"])
-                } else {
-                    agregarFila("Eliminaciones", "0")
-                }
             }
 
             if (data.stats["minecraft:custom"]["minecraft:play_time"]) {
