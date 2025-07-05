@@ -1,0 +1,37 @@
+#joinSection{
+    grid-column: 2/4;
+    background:
+            url("../img/end.png") padding-box,
+            var(--glow),
+            linear-gradient(rgba(47, 47, 47, 0), rgba(40, 40, 40, 0)) border-box;
+    background-attachment: fixed;
+    display: flex;
+}
+#ips{
+    backdrop-filter: blur(3px);
+    background: rgba(44, 101, 42, 0.12);
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+    max-height: 7rem;
+}
+#iconLarge {
+    margin: auto 0 auto auto;
+    max-width: 50%;
+    /*display: flex;
+    flex: fit-content;
+    flex: revert;*/
+}
+#descTitle{
+    background: linear-gradient(90deg, #383def, #5b12c9);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#render{
+    min-height: 400px;
+}
+#discordBox{
+    overflow: hidden;
+    padding: 0;
+}
+#discordBox:only-child{
+}

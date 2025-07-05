@@ -3,61 +3,62 @@
         <meta charset="UTF-8">
         <title>Map Arts</title>
         <link rel="icon" type="image/jpg" href="../img/server-icon.png">
-        <link rel="stylesheet" href="../css/styles.css" >
+        <link rel="stylesheet" href="../css/general.css" >
+        <link rel="stylesheet" href="../css/especial.css" >
         <style>
-            #mapContainer {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                justify-content: center;
+            .masonryContainer {
+                margin: 0 auto;
             }
-            .grid-item img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            .grid-sizer, .grid-item {
+                width: min-content;
+                max-width: 95%;
+            }
 
+            .grid-item img {
+
+                display: block;
                 transition: transform 0.2s ease-in-out;
+                object-fit: cover;
                 image-rendering: pixelated;
-            }
-            small{
-                text-decoration: none;
             }
             .grid-item img:hover {
                 transform: scale(1.05);
             }
             .inbox{
-                min-width: 0;
-                min-height: 0;
-                max-width: none;
-            }
-            @media (max-width: 1000px) {
-                .inbox{
-                    min-width: 300px;
-                }
+                min-width: 10px;
             }
         </style>
     </head>
     <body>
         <main class="content">
             <header class="inbox" id="header">
-                <a class="headBox" href="../index.html">
-                    <h1>
-                        <span class="xb">XB</span>
-                        <span class="xt">XT</span>
-                    </h1>
-                </a>
                 <nav>
                     <a class="subBox navButton" href="../index.html">Home</a>
                     <a class="subBox navButton" href="../commands/index.html">Commandos</a>
                     <a class="subBox navButton" href="https://minecraft-mp.com/server-s339858" >Vote</a>
                     <a class="subBox navButton" href="https://github.com/cerepapaloca/XBXT-Translations">Traducciones</a>
-
                 </nav>
             </header>
-            <section class="row" id="mapContainer">
-
+            <section id="mapContainer" class="masonryContainer">
+                <div class="grid-sizer"></div>
+                <div class="grid-item refImg inbox">
+                    <img src="https://2b2t.mapartindex.com/public/uploads/mapart/2b2t_MAPART_1112.png" alt="" style="cursor: pointer;">
+                </div>
+                <div class="grid-item refImg inbox">
+                    <img src="https://2b2t.mapartindex.com/public/uploads/mapart/2b2t_MAPART_1091.png" alt="" style="cursor: pointer;">
+                </div>
             </section>
         </main>
+        <script src="../javascript/isotope.js"></script>
+        <script src="../javascript/masony.js"></script>
+
+        <script src="../javascript/gradient.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
         <script type="module" src="../javascript/mapArt.js"></script>
+
+        <script>
+
+        </script>
     </body>
 </html>

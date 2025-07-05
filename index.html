@@ -21,17 +21,12 @@
         <link rel="icon" type="image/jpg" href="img/server-icon.png">
         <title>XBXT</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/styles.css" >
+        <link rel="stylesheet" href="css/general.css" >
+        <link rel="stylesheet" href="css/especial.css" >
     </head>
     <body>
         <main class="content">
             <header class="inbox" id="header">
-                <a class="headBox" href="index.html">
-                    <h1>
-                        <span class="xb">XB</span>
-                        <span class="xt">XT</span>
-                    </h1>
-                </a>
                 <nav>
                     <a class="subBox navButton" href="commands/index.html">Commandos</a>
                     <a class="subBox navButton" href="https://minecraft-mp.com/server-s339858" >Vote</a>
@@ -39,65 +34,61 @@
                     <a class="subBox navButton" href="mapart/index.html">MapArt</a>
                 </nav>
             </header>
-            <section class="row">
-                <article  class="inBox">
-                    <h2>Descripción</h2>
+            <section class="main-content">
+                <article  class="inBox" id="joinSection">
+                    <div id ="ips">
+                        <h2>Únete Al Servidor</h2>
+                        <ul>
+                            <li>
+                                Java:
+                                <code class="subBox copy">xbxt.xyz</code>
+                            </li>
+                            <li>
+                                Bedrock:
+                                <code class="subBox copy">xbxt.xyz:19132</code>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="iconLarge">
+                        <img src="img/iconWebSide.png" alt="Icon de la web de XBXT" style="max-width: 100%">
+                    </div>
+                </article>
+                <article  class="inBox" style="grid-column: 1/2; grid-row: 1/2;">
+                    <h1>Descripción</h1>
                     <p>
                         Un servidor anárquico semi-vanilla donde no tendrá reinicios y con un mapa ilimitados, donde podrás
                         hacer lo que quieres sin reglas ni restricciones de ningún tipo.
                     </p>
                 </article>
-                <article  class="inBox">
-                    <h2>Unete Al Servidor</h2>
-                    <ul>
-                        <li>
-                            Java:
-                            <code class="subBox copy">xbxt.xyz</code>
-                        </li>
-                        <li>
-                            Bedrock:
-                            <code class="subBox copy">xbxt.xyz:19132</code>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <section class="row">
-                <article class="inbox" id="discordBox">
+                <article class="inbox" id="discordBox" style="grid-row: 2/4; grid-column: 3/4;">
                     <iframe class="discord" src="https://discord.com/widget?id=1327001386142924822&theme=dark" width="100%" height="800px"  content="width=max, initial-scale=8.0"  allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </article>
-                <div class="verticalBox">
-                    <article  class="inBox">
-                        <h2>Estadísticas</h2>
-                        <ul>
-                            <li id="uniqueUsers"></li>
-                            <li id="activeTime"></li>
-                            <li id="onlinePlayer"></li>
-                            <li id="sizeWorlds"></li>
-                        </ul>
-                        <small>
-                            Estadísticas a tiempo real
-                        </small>
-                    </article>
-                    <article  class="inBox">
-                        <h2>Características</h2>
-                        <h3>Frame dupe</h3>
-                        <p id="frameDupe">
-                            Puedes duplicar con un item frame y con un item. Actualmente, el fame dupe está al N/A%
-                            de probabilidad
-                        </p>
-                        <h3>Anárquico Puro</h3>
-                        <p>
-                            Puedes hacer lo que tú quieras sin limitaciones alguna
-                        </p>
-                        <h3>Abierto Para Todos</h3>
-                        <p>
-                            Todos los jugadores se puede unir como jugadores bedrock como de java y si eres
-                            premium y no premium
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <section class="row">
+                <article  class="inBox">
+                    <h2>Estadísticas</h2>
+                    <ul>
+                        <li id="uniqueUsers"></li>
+                        <li id="activeTime"></li>
+                        <li id="onlinePlayer"></li>
+                        <li id="sizeWorlds"></li>
+                    </ul>
+                    <small>
+                        Estadísticas a tiempo real
+                    </small>
+                </article>
+                <article  class="inBox">
+                    <h2>Características</h2>
+                    <h3>Frame dupe</h3>
+                    <p id="frameDupe">
+                        Puedes duplicar con un item frame y con un item. Actualmente, el fame dupe está al N/A%
+                        de probabilidad
+                    </p>
+                    <h3>Abierto Para Todos</h3>
+                    <p>
+                        Todos los jugadores se puede unir como jugadores bedrock como de java y si eres
+                        premium y no premium
+                    </p>
+                </article>
+
                 <a class="inbox refImg" href="img/Captura1.png">
                     <img src="img/Captura1.png"
                          alt="Captura de pantalla del servidor"
@@ -114,8 +105,6 @@
                          loading="lazy"
                     >
                 </a>
-            </section>
-            <section class="row">
                 <a class="inbox refImg" href="img/Captura4.png">
                     <img src="img/Captura4.png"
                          alt="Captura de pantalla del servidor"
@@ -124,6 +113,13 @@
                          loading="lazy"
                     >
                 </a>
+                <article class="inbox">
+                    <h2>Jugadores conectados</h2>
+                </article>
+                <article class="inbox" id="render" style="grid-row: 3/5; grid-column: -4/-2;">
+                    <p>Hola Mundo</p>
+                </article>
+                <!--
                 <article class="inbox">
                     <div id="headTable">
                         <label for="searchInput">
@@ -169,9 +165,12 @@
                         </tbody>
                     </table>
                 </article>
+                Primary Meta Tags -->
             </section>
         </main>
     </body>
     <script src="javascript/home.js"></script>
     <script src="javascript/searchUser.js"></script>
+    <script src="javascript/gradient.js"></script>
+
 </html>
