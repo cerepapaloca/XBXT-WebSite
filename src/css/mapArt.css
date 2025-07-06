@@ -1,0 +1,21 @@
+.masonryContainer {
+    margin: 0 auto;
+}
+.grid-sizer, .grid-item {
+    width: min-content;
+    max-width: 95%;
+}
+
+.grid-item img {
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+.inbox{
+    min-width: 10px;
+}

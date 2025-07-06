@@ -16,10 +16,9 @@
 }
 #iconLarge {
     margin: auto 0 auto auto;
-    max-width: 50%;
-    /*display: flex;
-    flex: fit-content;
-    flex: revert;*/
+}
+#iconLarge img{
+    max-width: 100%
 }
 #descTitle{
     background: linear-gradient(90deg, #383def, #5b12c9);
@@ -28,8 +27,16 @@
 }
 #render{
     min-height: 400px;
+    grid-row: 3/5;
+    grid-column: -4/-2;
+}
+#decBox{
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 #discordBox{
+    grid-row: 2/4;
+    grid-column: 3/4;
     overflow: hidden;
     padding: 0;
 }
