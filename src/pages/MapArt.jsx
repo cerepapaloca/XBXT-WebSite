@@ -5,21 +5,47 @@ import '../css/mapArt.css';
 
 export default function MapGallery() {
     const [images, setImages] = useState([]);
+    // const updateFade = function () {
+    //     let boxMap = document.querySelectorAll('.transformUp');
+    //     let altura = window.innerHeight / 1.5;
+    //
+    //     boxMap.forEach(bax => {
+    //         let distance = bax.getBoundingClientRect().top;
+    //
+    //         if (distance <= altura) {
+    //             bax.classList.add('aparece');
+    //         } else {
+    //             bax.classList.remove('aparece');
+    //         }
+    //     })
+    // }
+    // window.addEventListener('scroll', updateFade)
+
+    const showItem = function () {
+        const items = document.querySelectorAll('.grid-item');
+
+        items.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add('aparece');
+            }, index * 50); // animación escalonada
+        });
+    };
+
 
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await fetch("https://xbxt.xyz:8443/mapArtData/");
+                const response = await fetch("https://localhost:8443/mapArtData/");
                 const imageList = await response.json();
 
                 const imageData = await Promise.all(
                     imageList.map(async (imageName) => {
-                        const metadataResponse = await fetch(`https://xbxt.xyz:8443/mapArtData/${imageName}`);
+                        const metadataResponse = await fetch(`https://localhost:8443/mapArtData/${imageName}`);
                         const metadata = await metadataResponse.json();
 
                         return {
                             name: imageName,
-                            url: `https://xbxt.xyz:8443/mapArtImg/${imageName}`,
+                            url: `https://localhost:8443/mapArtImg/${imageName}`,
                             title: metadata.author || "Desconocido",
                         };
                     })
@@ -30,7 +56,6 @@ export default function MapGallery() {
                 console.error("Error al cargar imágenes:", err);
             }
         };
-
         fetchImages();
     }, []);
 
@@ -49,10 +74,17 @@ export default function MapGallery() {
                     },
                 });
             }
-        }, 100);
+            showItem()
+            // updateFade()
+
+        }, 200);
 
         return () => clearTimeout(timeout);
     }, [images]);
+
+
+
+
 
     return (
         <section id="mapContainer" className="masonryContainer">
@@ -60,7 +92,7 @@ export default function MapGallery() {
             {images.map((img, index) => (
                 <a
                     key={index}
-                    className="grid-item refImg inbox"
+                    className="grid-item refImg inbox transformUp"
                     href={`/mapart/id/${img.name}`}
                 >
                     <img
@@ -73,4 +105,5 @@ export default function MapGallery() {
             ))}
         </section>
     );
+
 }

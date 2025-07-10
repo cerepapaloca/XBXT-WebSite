@@ -1,0 +1,15 @@
+.contentText{
+    width: 30%;
+}
+.refImg{
+    flex-grow: 1;
+}
+.contentSection{
+    display: flex;
+    justify-content: space-around;
+}
+.largeMapArt{
+    image-rendering: pixelated;
+}
+ul p{
+}

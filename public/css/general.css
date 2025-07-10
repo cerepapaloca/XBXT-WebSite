@@ -6,7 +6,7 @@
     --bg: hsl(0, 0%, 18%);
     --size: 400px;
     --glow: radial-gradient(50% 50% at center,
-    rgb(136, 138, 145),
+    rgb(79, 80, 84),
     transparent) calc((var(--x) * 1px) - (var(--size) * 0.5)) calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size) no-repeat fixed;
 }
 h3 {
@@ -38,13 +38,12 @@ body { /*background: rgb(27, 29, 37);*/
     margin: 0.5rem;
     border-radius: 1rem;
     min-width: 13rem;
-    position: relative;
     border: 0.25rem solid transparent;
     background:
             linear-gradient(var(--bg), var(--bg)) padding-box,
             var(--glow),
             linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) border-box;
-    transition: background-size 0.24s;
+    /*transition: background-size 10s;*/
 }/*
 .inbox::before {
     content: "";

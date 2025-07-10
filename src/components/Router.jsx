@@ -2,8 +2,9 @@ import { EVENTS } from '../utils/consts.jsx'
 import { getCurrentPath } from '../utils/getCurrentPath.jsx'
 import { useState, useEffect, Children } from 'react'
 import { match } from 'path-to-regexp'
+import NotFound from "../pages/NotFound";
 
-export function Router ({ children, routes = [], defaultComponent: DefaultComponent = () => <h1>404</h1> }) {
+export function Router ({ children, routes = [], defaultComponent: DefaultComponent = NotFound}) {
     const [currentPath, setCurrentPath] = useState(getCurrentPath())
 
     useEffect(() => {
@@ -45,8 +46,8 @@ export function Router ({ children, routes = [], defaultComponent: DefaultCompon
         // por ejemplo, si la ruta es /search/:query
         // y la url es /search/javascript
         // matched.params.query === 'javascript'
-        // routeParams = matched.params
-        // return true
+        routeParams = matched.params
+        return true
     })?.Component
 
     return Page

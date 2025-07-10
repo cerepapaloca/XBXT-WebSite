@@ -13,7 +13,7 @@ export default function HomePage () {
                             </li>
                             <li>
                                 Bedrock:
-                                <code className="subBox copy">xbxt.xyz:19132</code>
+                                <code className="subBox copy">localhost:19132</code>
                             </li>
                         </ul>
                     </div>

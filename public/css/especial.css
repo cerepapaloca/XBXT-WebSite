@@ -40,5 +40,17 @@
     overflow: hidden;
     padding: 0;
 }
-#discordBox:only-child{
+.loading-text::after {
+    content: "";
+    animation: dots 0.5s steps(3, end) infinite;
+}
+.Transparent{
+    color: rgba(255, 255, 255, 0.29);
+    font-weight: bold;
+}
+@keyframes dots {
+    0%   { content: ""; }
+    33%  { content: "."; }
+    66%  { content: ".."; }
+    100% { content: "..."; }
 }

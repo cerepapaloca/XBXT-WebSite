@@ -4,8 +4,14 @@
 .grid-sizer, .grid-item {
     width: min-content;
     max-width: 95%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(10%);
 }
-
+.aparece{
+    opacity: 1;
+    transform: none;
+}
 .grid-item img {
     cursor: pointer;
     display: block;
