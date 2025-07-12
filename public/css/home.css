@@ -1,0 +1,12 @@
+#backGroudAux{
+    display: initial;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%
+}
+@media (max-width: 75rem){
+    #backGroudAux{
+        display: none;
+    }
+}

@@ -1,14 +1,18 @@
 .contentText{
-    width: 30%;
+    min-width: 18rem;
+    height: 25rem;
 }
-.refImg{
+.refImg {
     flex-grow: 1;
+    max-width: 50%;
+    height: min-content;
 }
 .contentSection{
     display: flex;
     justify-content: space-around;
 }
 .largeMapArt{
+    object-fit: contain; /* Mantiene relación de aspecto sin recortar */
     image-rendering: pixelated;
 }
 ul p{

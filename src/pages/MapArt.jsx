@@ -4,7 +4,6 @@ import '../css/mapArt.css';
 
 
 export default function MapGallery() {
-    const [images, setImages] = useState([]);
     // const updateFade = function () {
     //     let boxMap = document.querySelectorAll('.transformUp');
     //     let altura = window.innerHeight / 1.5;
@@ -31,6 +30,7 @@ export default function MapGallery() {
         });
     };
 
+    const [images, setImages] = useState([]);
 
     useEffect(() => {
         const fetchImages = async () => {

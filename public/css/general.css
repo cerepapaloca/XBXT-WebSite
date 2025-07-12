@@ -3,10 +3,10 @@
     --y: 0;
     --xp: 0;
     --yp: 0;
-    --bg: hsl(0, 0%, 18%);
+    --bg: hsl(0, 0%, 22%);
     --size: 400px;
     --glow: radial-gradient(50% 50% at center,
-    rgb(79, 80, 84),
+    rgba(164, 164, 164, 0.53),
     transparent) calc((var(--x) * 1px) - (var(--size) * 0.5)) calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size) no-repeat fixed;
 }
 h3 {
@@ -27,14 +27,16 @@ body { /*background: rgb(27, 29, 37);*/
     background-size: 100%;
     /*background-image: url("../img/BackGround.png");*/
     color: rgb(255, 255, 255);
-    background: linear-gradient(#000000, #000000);
+    background-image: url("../img/background-Home.webp");
+    image-rendering: auto;
+    background-position: bottom;
+    position: relative;
     font-size: 1rem;
     z-index: -2;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .inbox {
     padding: 1rem 2rem;
-    /*background-color: rgba(59, 59, 59, 0.27);*/
     margin: 0.5rem;
     border-radius: 1rem;
     min-width: 13rem;
@@ -44,7 +46,8 @@ body { /*background: rgb(27, 29, 37);*/
             var(--glow),
             linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) border-box;
     /*transition: background-size 10s;*/
-}/*
+}
+/*
 .inbox::before {
     content: "";
     position: absolute;
@@ -97,9 +100,9 @@ small{
     border: 0;
     width: 75rem;
     border-radius: 1.5rem;
-    backdrop-filter: blur(10px);
     display: block;
-    background-image: linear-gradient( rgba(37, 37, 44, 0.53), rgba(29, 33, 38, 0.22));
+    backdrop-filter: blur(6px);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.76));
 }
 @media (max-width: 75rem){
     .content{
@@ -135,8 +138,11 @@ code{
     font-family: 'JetBrains Mono', Consolas, Monospaced, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
     color: #ffffff;
 }
+a{
+    color: #6168ef;
+}
 .subBox{
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(86, 86, 86);
     border-radius: 0.7vh;
     padding-left: 8px;
     padding-right: 8px;
@@ -144,14 +150,15 @@ code{
     transition: background-color 0.3s ease;
 }
 .subBox:hover{
-    background-color: rgb(136, 138, 145);
+    background-color: rgb(148, 148, 148);
+    color: #ffffff;
 }
 .imageInBox {
     height: 100%;
     width: 100%;
     overflow: hidden;
     margin: 0;
-    transition: scale 1s;
+    transition: scale 500ms;
 }
 .imageInBox:hover {
     scale: 1.1;
@@ -165,8 +172,8 @@ code{
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 7px;
-    margin: 5px;
+    padding: 0.4rem;
+    margin: 0.2rem;
     color: rgb(218, 218, 218);
 }
 nav{
@@ -178,19 +185,27 @@ nav{
     padding: 0;
 }
 button{
-    background-color: #2a2a2a;
-    border: #5e5e5e solid 3px;
-    border-radius: 1vh;
-    color: white;
-    padding: 7px;
+    background:
+            linear-gradient(var(--bg), var(--bg)) padding-box,
+            var(--glow),
+            linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) border-box;
+    border: transparent solid 0.2rem;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
     margin: 4px;
-    font-size: inherit;
     align-content: center;
-    transition-duration: 400ms;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+button:hover{
+    background-color: rgb(129, 129, 129);
+}
+button:active{
+    transition-duration: 80ms;
+    background-color: #ffffff;
 }
 @media (max-width: 75rem){
     .imageInBox {
-        border-radius: 6px;
         height: auto;
     }
     .navButton{
@@ -199,13 +214,7 @@ button{
     }
 }
 
-button:hover{
-    background-color: rgb(97, 97, 100);
-}
-button:active{
-    transition-duration: 0ms;
-    background-color: #000000;
-}
+
 #inputSuper{
     position: relative;
     width: min-content;

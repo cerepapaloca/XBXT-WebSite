@@ -25,7 +25,7 @@ function App() {
                 <Route path='/mapArt/' Component={LazyMapArtPage}/>
                 <Route path='/commands/' Component={LazyCommandPage} />
                 <Route path='/mapArt/id/:uuid' Component={LazySingleMapArtPage}/>
-                <Route path='/' Component={HomePage} />
+                <Route path='/' Component={HomePage}/>
             </Router>
         </Suspense>
     );
