@@ -1,19 +1,38 @@
 .contentText{
-    min-width: 18rem;
+    min-width: 15rem;
     height: 25rem;
 }
 .refImg {
     flex-grow: 1;
-    max-width: 50%;
+    width: min-content;
     height: min-content;
 }
 .contentSection{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .largeMapArt{
     object-fit: contain; /* Mantiene relación de aspecto sin recortar */
     image-rendering: pixelated;
+}
+.content{
+    min-height: auto;
+}
+body{
+    background-image: url("../../public/img/background-MapArtSingle.webp");
+    background-position: top;
+}
+.skinPlayer{
+    transition: ease 400ms;
+}
+.skinPlayer:hover{
+    scale: 1.1;
+    transition: ease-in-out 400ms;
+}
+.skinPlayerContainer{
+    display: flex;
+    gap: 10px;
 }
 ul p{
 }

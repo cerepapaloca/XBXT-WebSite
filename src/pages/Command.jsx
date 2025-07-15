@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import "../css/Command.css"
 
 export default function CommandPage() {
-    const [commands, setCommands] = useState([]); // 👈 ¡Aquí está el estado!
+    const [commands, setCommands] = useState([]);
 
     useEffect(() => {
-        fetch("https://localhost:8443/commands")
+        fetch("https://xbxt.xyz:8443/commands")
             .then(res => res.json())
             .then(data => setCommands(data))
             .catch(err => console.error("Error al cargar comandos:", err));

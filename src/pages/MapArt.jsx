@@ -35,17 +35,17 @@ export default function MapGallery() {
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await fetch("https://localhost:8443/mapArtData/");
+                const response = await fetch("https://xbxt.xyz:8443/mapArtData/");
                 const imageList = await response.json();
 
                 const imageData = await Promise.all(
                     imageList.map(async (imageName) => {
-                        const metadataResponse = await fetch(`https://localhost:8443/mapArtData/${imageName}`);
+                        const metadataResponse = await fetch(`https://xbxt.xyz:8443/mapArtData/${imageName}`);
                         const metadata = await metadataResponse.json();
 
                         return {
                             name: imageName,
-                            url: `https://localhost:8443/mapArtImg/${imageName}`,
+                            url: `https://xbxt.xyz:8443/mapArtImg/${imageName}`,
                             title: metadata.author || "Desconocido",
                         };
                     })

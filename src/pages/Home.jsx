@@ -35,6 +35,7 @@ export default function HomePage () {
     // }
     // obtenerEstado();
 
+    let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     useEffect(() => {
         const fetchImages = async () => {
             try {
@@ -45,26 +46,36 @@ export default function HomePage () {
                 console.error("Error al cargar metadata:", err);
             }
         };
-
         window.addEventListener('scroll', () => {
             updateScroll()
         });
-        updateScroll()
+        window.addEventListener('resize', () => {
+            maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        });
         fetchImages();
-    }, []);
-    const parallax = document.getElementById('backGroudAux');
-    const updateScroll = function () {
-        let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        let scrollPosition = window.scrollY
-        let frat = scrollPosition / maxScroll;
+        const MaxFrames = 377;
+        const parallax = document.getElementById('backGroudAux');
 
-        parallax.style.transform = `translateY(${(frat * 150)-150}px)`; // 0.5 = más lento
-    }
+        const imgElement = document.getElementById('renderImg')
+        const updateScroll = function () {
+            let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            let scrollPosition = window.scrollY
+            let frat = scrollPosition / maxScroll;
+
+            parallax.style.transform = `translateY(${(frat * 150)-150}px)`; // 0.5 = más lento
+
+            const frame = Math.floor(frat * MaxFrames)
+
+            const id = frame.toString().padStart(3, '0');
+            imgElement.src = `/img/renderLayer/Secuencia%2001${id}.jpg`
+        }
+    }, []);
+
 
     useEffect(() => {
         const fetchPlayers = async () => {
             try {
-                const resp = await fetch('https://localhost:8443/playerOnline/');
+                const resp = await fetch('https://xbxt.xyz:8443/playerOnline/');
                 const json = await resp.json();
                 setPlayers(json);
             } catch (err) {
@@ -88,13 +99,13 @@ export default function HomePage () {
                             <li>
                                 Java:
                                 <button>
-                                    <code onClick={() => handleCopy("localhost", "java")}>localhost</code>
+                                    <code onClick={() => handleCopy("xbxt.xyz", "java")}>xbxt.xyz</code>
                                 </button>
                             </li>
                             <li>
                                 Bedrock:
-                                <button onClick={() => handleCopy("localhost:19132", "Bedrock")}>
-                                    <code>localhost:19132</code>
+                                <button onClick={() => handleCopy("xbxt.xyz:19132", "Bedrock")}>
+                                    <code>xbxt.xyz:19132</code>
                                 </button>
                             </li>
                         </ul>
@@ -132,10 +143,9 @@ export default function HomePage () {
                 </article>
                 <article className="inBox">
                     <h2>Características</h2>
-                    <h3>Frame dupe</h3>
-                    <p id="frameDupe">
-                        Puedes duplicar con un item frame y con un item. Actualmente, el fame dupe está al N/A%
-                        de probabilidad
+                    <h3>Dupes</h3>
+                    <p>
+                        Tiene virios dupes actual mente tiene Frame Dupe y Pisto Dupe
                     </p>
                     <h3>Abierto Para Todos</h3>
                     <p>
@@ -172,12 +182,12 @@ export default function HomePage () {
                         players.length > 0 ? (
                             <ul>
                                 {players.map((p) => (
-                                    <li key={p.uuid}>
+                                    <li>
                                         <div className={"elementPlayer"}>
                                             <strong>{p.name} </strong> <small>Ping: {p.ping} ms</small>
                                             <a className={"headPlayer"}
                                                href={`https://es.namemc.com/profile/${p ? p.uuid || "unknown" : ""}`}>
-                                                <img src={`https://crafatar.com/renders/head/${p.uuid}?scale=2`}
+                                                <img src={`https://crafatar.com/renders/head/${p.uuidSkin}?scale=2`}
                                                      alt={"cabeza de" + p.name} title={p.name}/>
                                             </a>
                                         </div>
@@ -192,7 +202,7 @@ export default function HomePage () {
                     )}
                 </article>
                 <article className="inbox" id="render">
-                    <p>Hola Mundo</p>
+                    <img id={"renderImg"} src="/img/renderLayer/Secuencia%2001000.jpg" alt={"render del spawn"}/>
                 </article>
             </section>
         </>
