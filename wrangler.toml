@@ -1,0 +1,7 @@
+name = "xtxt-lading-page"
+account_id = "73ec3c7ceefbd45e8157821b7eee6648"
+main = "src/index.js"  # Necesitas crear este archivo
+compatibility_date = "2025-07-15"
+
+[build]
+command = "npm run build"
