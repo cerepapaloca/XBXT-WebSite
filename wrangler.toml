@@ -1,10 +1,7 @@
 name = "xtxt-lading-page"
 account_id = "73ec3c7ceefbd45e0157821b7eeef648"
-main = "src/index.js"  # Necesitas crear este archivo
+main = "src/index.js"
 compatibility_date = "2025-07-15"
 
 [build]
 command = "npm run build"
-upload_rules = [
-    { glob = "**/*.webp", type = "asset" }
-]
