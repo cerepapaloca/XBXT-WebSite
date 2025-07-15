@@ -1,5 +1,5 @@
 name = "xtxt-lading-page"
-account_id = "73ec3c7ceefbd45e8157821b7eee6648"
+account_id = "73ec3c7ceefbd45e0157821b7eeef648"
 main = "src/index.js"  # Necesitas crear este archivo
 compatibility_date = "2025-07-15"
 
