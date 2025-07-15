@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 
 export default function HomePage () {
 
-    const [copiedId, setCopiedId] = useState(null);
+    const [setCopiedId] = useState(null);
     const [data, setData] = useState(null);
     const [players, setPlayers] = useState(null);
 
@@ -35,7 +35,6 @@ export default function HomePage () {
     // }
     // obtenerEstado();
 
-    let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     useEffect(() => {
         const fetchImages = async () => {
             try {
@@ -48,9 +47,6 @@ export default function HomePage () {
         };
         window.addEventListener('scroll', () => {
             updateScroll()
-        });
-        window.addEventListener('resize', () => {
-            maxScroll = document.documentElement.scrollHeight - window.innerHeight;
         });
         fetchImages();
         const MaxFrames = 377;
@@ -126,6 +122,7 @@ export default function HomePage () {
                     <iframe className="discord" src="https://discord.com/widget?id=1327001386142924822&theme=dark"
                             width="100%" height="800px" content="width=max, initial-scale=8.0" allowTransparency="true"
                             frameBorder="0"
+                            title="Discord de xbxt"
                             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </article>
                 <article className="inBox">

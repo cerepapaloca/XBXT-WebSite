@@ -2,7 +2,6 @@ import '../css/SingleMapArt.css';
 import {useEffect, useRef, useState} from "react";
 
 export default function SingleMapArtPage({ routeParams }) {
-    const imgRef = useRef();
     const [data, setData] = useState(null);
     const [players, setPlayers] = useState(null);
 
