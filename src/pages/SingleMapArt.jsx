@@ -1,5 +1,5 @@
 import '../css/SingleMapArt.css';
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 
 export default function SingleMapArtPage({ routeParams }) {
     const [data, setData] = useState(null);
