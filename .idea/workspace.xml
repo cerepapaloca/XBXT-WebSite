@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e41002f-75f5-4543-b981-c7f35925ed8e" name="Changes" comment="fix 15" />
+    <list default="true" id="5e41002f-75f5-4543-b981-c7f35925ed8e" name="Changes" comment="fix 16" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +225,7 @@
       <workItem from="1752337090610" duration="19455000" />
       <workItem from="1752538128680" duration="6147000" />
       <workItem from="1752545771067" duration="1943000" />
-      <workItem from="1752607366390" duration="16266000" />
+      <workItem from="1752607366390" duration="16624000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -483,7 +483,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752630604534</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fix 16">
+      <option name="closed" value="true" />
+      <created>1752630746070</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1752630746070</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +509,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bugfix con el playerStats y fix con el navegador de google" />
     <MESSAGE value="fix de alineamiento de los botones de nav y añadir imágenes" />
     <MESSAGE value="nueva section map Art" />
     <MESSAGE value="fix url" />
@@ -526,7 +533,8 @@
     <MESSAGE value="fix 13" />
     <MESSAGE value="fix 14" />
     <MESSAGE value="fix 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 15" />
+    <MESSAGE value="fix 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
