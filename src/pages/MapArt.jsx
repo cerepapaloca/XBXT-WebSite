@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Isotope from "isotope-layout";
 import '../css/mapArt.css';
-
+import background from "../assets/background-MapArtGallery.webp";
 
 export default function MapGallery() {
     // const updateFade = function () {
@@ -56,6 +56,7 @@ export default function MapGallery() {
                 console.error("Error al cargar imágenes:", err);
             }
         };
+        document.body.style.backgroundImage = `url(${background})`;
         fetchImages();
     }, []);
 
