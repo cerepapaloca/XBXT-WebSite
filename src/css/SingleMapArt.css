@@ -20,7 +20,7 @@
     min-height: auto;
 }
 body{
-    background-image: url("public/img/background-MapArtSingle.webp");
+    background-image: url("../img/background-MapArtSingle.webp");
     background-position: top;
 }
 .skinPlayer{
