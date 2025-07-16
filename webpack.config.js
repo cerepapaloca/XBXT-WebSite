@@ -9,14 +9,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(jpg|jpeg|png|gif)$/i,
+                test: /\.(jpg|jpeg|png|gif|webp)$/i,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'images/',
-                            publicPath: 'images/',
+                            outputPath: 'img/',
+                            publicPath: 'img/',
                         },
                     },
                 ],
