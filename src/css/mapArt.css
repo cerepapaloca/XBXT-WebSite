@@ -23,7 +23,7 @@
     transform: scale(1.05);
 }
 body{
-    background-image: url("../img/background-MapArtGallery.webp");
+    /*background-image: url("../img/background-MapArtGallery.webp");*/
     background-position: top;
 }
 .inbox{
