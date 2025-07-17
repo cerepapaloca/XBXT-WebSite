@@ -13,14 +13,14 @@
     justify-content: space-around;
 }
 .largeMapArt{
-    object-fit: contain; /* Mantiene relación de aspecto sin recortar */
+    object-fit: contain;
     image-rendering: pixelated;
 }
 .content{
     min-height: auto;
 }
 body{
-    /*background-image: url("../img/background-MapArtSingle.webp");*/
+    background-image: url("/public/img/background-MapArtSingle.webp");
     background-position: top;
 }
 .skinPlayer{

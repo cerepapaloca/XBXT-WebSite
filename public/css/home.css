@@ -17,4 +17,10 @@
     #backGroudAux{
         display: none;
     }
+    #render{
+        display: none;
+    }
+    #videoYouTube{
+        min-height: 15rem;
+    }
 }

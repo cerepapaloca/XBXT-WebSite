@@ -41,6 +41,11 @@ body { /*background: rgb(27, 29, 37);*/
         background-size: auto;
     }
 }
+@media (max-width: 75rem){
+    body{
+        font-size: 2rem;
+    }
+}
 
 .inbox {
     padding: 1rem 2rem;

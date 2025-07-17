@@ -6,7 +6,7 @@ import NotFound from "../pages/NotFound";
 
 export function Router ({ children, routes = [], defaultComponent: DefaultComponent = NotFound}) {
     const [currentPath, setCurrentPath] = useState(getCurrentPath())
-
+    console.log(currentPath)
     useEffect(() => {
         const onLocationChange = () => {
             setCurrentPath(getCurrentPath())

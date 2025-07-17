@@ -18,23 +18,6 @@ export default function HomePage () {
         }
     };
 
-    // async function obtenerEstado() {
-    //     try {
-    //         let response = await fetch("https://xbxt.xyz:8443/statistic");
-    //         let data = await response.json();
-    //         document.getElementById("uniqueUsers").textContent = `${data.uniqueUsers} jugadores unicos`;
-    //         let hour = convertirToHour(data.activeTime);
-    //         document.getElementById("activeTime").textContent = `Tiempo activo durante ${Math.round(hour/24)} dias y ${hour%24} horas`
-    //         document.getElementById("onlinePlayer").textContent = `${data.onlinePlayer} jugadores conectados de ${data.maxPlayers}`
-    //         document.getElementById("sizeWorlds").textContent = `${Math.round(data.sizeWorlds/(1024.0 * 1024))} MB de mundo`
-    //         document.getElementById("frameDupe").textContent = document.getElementById("frameDupe").textContent.replace("N/A", data.frameDupe*100)
-    //     } catch (error) {
-    //         console.error("Error al obtener el estado:", error);
-    //     }
-    //
-    // }
-    // obtenerEstado();
-
     useEffect(() => {
         const fetchImages = async () => {
             try {
@@ -49,22 +32,72 @@ export default function HomePage () {
             updateScroll()
         });
         fetchImages();
-        const MaxFrames = 377;
-        const parallax = document.getElementById('backGroudAux');
+        loadImageData();
+        let MaxFrames = 377;
+
+
+        let lastCall = 0;
+        const throttleDelay = 50;
+        let imageData = [];
+        let lastFrame = -1;
+
+        async function loadImageData() {
+            try {
+                const response = await fetch('/images.json');
+                const data = await response.json();
+                imageData = data.images;
+                MaxFrames = imageData.length - 1; // El frame máximo es el total - 1
+            } catch (error) {
+                console.error("Error cargando el JSON:", error);
+            }
+        }
 
         const imgElement = document.getElementById('renderImg')
-        const updateScroll = function () {
-            let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-            let scrollPosition = window.scrollY
-            let frat = scrollPosition / maxScroll;
+        const parallax = document.getElementById('backGroudAux');
 
-            parallax.style.transform = `translateY(${(frat * 150)-150}px)`; // 0.5 = más lento
+        function updateScroll() {
+            // Cálculos de posición
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPosition = window.scrollY || window.pageYOffset;
+            const scrollFraction = Math.min(1, Math.max(0, scrollPosition / maxScroll));
+            parallax.style.transform = `translateY(${(scrollFraction * 150) - 150}px)`;
 
-            const frame = Math.floor(frat * MaxFrames)
+            const now = performance.now();
 
-            const id = frame.toString().padStart(3, '0');
-            imgElement.src = `/img/renderLayer/Secuencia%2001${id}.jpg`
+            // Throttle
+            if (now - lastCall < throttleDelay) return;
+            lastCall = now;
+
+
+            // Cálculo de frame
+            const currentFrame = Math.floor(scrollFraction * MaxFrames);
+
+            // Cambiar imagen solo si es necesario
+            if (currentFrame !== lastFrame && imageData[currentFrame]) {
+                lastFrame = currentFrame;
+
+                requestAnimationFrame(() => {
+                    // Usar directamente el Base64 del JSON
+                    imgElement.src = `data:image/jpeg;base64,${imageData[currentFrame].data}`;
+
+                    // Opcional: Precargar frames siguientes
+                    preloadNextFrames(currentFrame);
+                });
+            }
+
+            function preloadNextFrames(currentFrame) {
+                for (let i = 1; i <= 3; i++) {
+                    const nextFrame = currentFrame + i;
+                    if (nextFrame <= MaxFrames && imageData[nextFrame]) {
+                        const img = new Image();
+                        img.src = `data:image/jpeg;base64,${imageData[nextFrame].data}`;
+                    }
+                }
+            }
         }
+        updateScroll();
+// Evento de scroll
+        window.addEventListener('scroll', updateScroll);
     }, []);
 
 
@@ -199,7 +232,7 @@ export default function HomePage () {
                     )}
                 </article>
                 <article className="inbox" id="render">
-                    <img id={"renderImg"} src="/img/renderLayer/Secuencia%2001000.jpg" alt={"render del spawn"}/>
+                    <img loading="lazy" id={"renderImg"} src="img/FistRender.jpg" alt={"render del spawn"}/>
                 </article>
             </section>
         </>

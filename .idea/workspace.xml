@@ -4,7 +4,411 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e41002f-75f5-4543-b981-c7f35925ed8e" name="Changes" comment="fix 16" />
+    <list default="true" id="5e41002f-75f5-4543-b981-c7f35925ed8e" name="Changes" comment="fix 17">
+      <change afterPath="$PROJECT_DIR$/deploy.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/FistRender.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/background-Command.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/background-MapArtGallery.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/background-MapArtSingle.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascript/gradient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/commands/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/especial.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/especial.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/background-Home.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/background-Home.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01046.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01055.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01056.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01057.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01058.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01059.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01060.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01061.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01063.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01064.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01065.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01068.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01069.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01070.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01071.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01072.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01073.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01075.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01076.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01077.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01078.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01081.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01082.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01083.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01084.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01085.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01086.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01087.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01089.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01090.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01091.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01092.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01093.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01094.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01095.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01097.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01098.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01099.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01112.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01113.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01116.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01120.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01122.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01129.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01130.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01131.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01132.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01134.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01136.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01140.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01142.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01143.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01144.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01145.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01148.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01149.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01151.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01153.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01154.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01156.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01157.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01158.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01159.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01161.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01163.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01164.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01165.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01166.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01167.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01168.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01169.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01170.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01171.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01172.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01173.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01174.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01175.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01176.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01177.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01179.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01181.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01182.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01183.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01184.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01185.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01186.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01187.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01188.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01189.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01190.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01191.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01192.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01194.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01195.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01196.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01197.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01198.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01203.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01204.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01205.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01206.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01207.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01208.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01209.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01210.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01211.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01213.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01214.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01215.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01216.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01217.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01218.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01219.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01220.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01221.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01223.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01224.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01225.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01226.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01227.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01228.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01229.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01230.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01231.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01232.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01233.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01234.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01235.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01236.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01237.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01238.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01239.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01240.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01241.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01242.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01243.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01244.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01245.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01246.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01247.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01248.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01249.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01250.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01251.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01252.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01253.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01254.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01255.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01256.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01257.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01258.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01259.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01260.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01261.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01262.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01263.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01264.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01265.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01266.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01267.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01268.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01269.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01270.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01271.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01272.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01274.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01275.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01276.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01277.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01278.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01279.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01281.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01282.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01283.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01284.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01286.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01287.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01288.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01289.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01290.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01291.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01292.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01293.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01294.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01295.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01296.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01297.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01298.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01299.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01300.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01301.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01302.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01303.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01304.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01306.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01307.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01308.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01309.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01310.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01311.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01312.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01313.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01314.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01315.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01316.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01317.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01318.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01319.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01320.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01321.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01322.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01323.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01324.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01325.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01326.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01327.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01328.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01329.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01331.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01332.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01334.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01335.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01336.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01337.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01338.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01339.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01341.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01342.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01343.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01344.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01345.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01346.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01347.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01348.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01349.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01351.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01352.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01353.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01354.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01355.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01356.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01358.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01359.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01360.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01361.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01362.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01363.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01364.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01365.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01366.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01367.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01368.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01369.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01370.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01371.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01372.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01373.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01374.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01375.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01376.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/renderLayer/Secuencia 01377.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Router.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Command.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Command.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/SingleMapArt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/SingleMapArt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/mapArt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/mapArt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/background-Command.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/background-MapArtGallery.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/background-MapArtSingle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MapArt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MapArt.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SingleMapArt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleMapArt.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +457,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Batch.deplay.executor": "Run",
+    "Batch.deploy.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -60,7 +466,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Cagut/IdeaProjects/XBXT-WebSite/public/img/renderLayer",
+    "last_opened_file_path": "C:/Users/Cagut/IdeaProjects/XBXT-WebSite/public/img",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,21 +488,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\public\img\renderLayer" />
       <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\public\img" />
+      <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\public\img\renderLayer" />
       <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\xbxt-web\src" />
       <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\xbxt-web\public" />
       <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\src\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\src\img" />
+      <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\public" />
+      <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\public\javascript" />
       <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\public\img" />
+      <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\src\img" />
       <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\public\css" />
-      <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\src\css" />
-      <recent name="C:\Users\Cagut\IdeaProjects\XBXT-WebSite\src\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Batch.deploy">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="XBXT-WebSite" />
       <method v="2">
@@ -107,6 +513,28 @@
       <module name="XBXT-WebSite" />
       <option name="filePath" />
       <method v="2" />
+    </configuration>
+    <configuration name="deplay" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="PaginaDeSever" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Cagut\IdeaProjects\XBXT-WebSite" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="deplay.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="deploy" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="PaginaDeSever" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Cagut\IdeaProjects\XBXT-WebSite" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="deploy.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="XBXT-WebSite" />
@@ -141,6 +569,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Batch.deploy" />
+        <item itemvalue="Batch.deplay" />
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.dev" />
       </list>
@@ -225,7 +655,10 @@
       <workItem from="1752337090610" duration="19455000" />
       <workItem from="1752538128680" duration="6147000" />
       <workItem from="1752545771067" duration="1943000" />
-      <workItem from="1752607366390" duration="16624000" />
+      <workItem from="1752607366390" duration="28835000" />
+      <workItem from="1752682745362" duration="6963000" />
+      <workItem from="1752692996219" duration="54000" />
+      <workItem from="1752693058833" duration="6098000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -491,7 +924,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752630746070</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fix 17">
+      <option name="closed" value="true" />
+      <created>1752631094094</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1752631094094</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +950,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix de alineamiento de los botones de nav y añadir imágenes" />
     <MESSAGE value="nueva section map Art" />
     <MESSAGE value="fix url" />
     <MESSAGE value="cambios menores" />
@@ -534,7 +974,8 @@
     <MESSAGE value="fix 14" />
     <MESSAGE value="fix 15" />
     <MESSAGE value="fix 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 16" />
+    <MESSAGE value="fix 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 17" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

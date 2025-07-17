@@ -37,9 +37,12 @@ export default function SingleMapArtPage({ routeParams }) {
 
     return (
         <>
-            <meta name="description" content="MapArts De XBXT"/>
+            <meta property="og:title" content={`Map Art de ${data ? data.uploader || "N/A" : ""}`}/>
             <meta property="og:image" content= {`https://xbxt.xyz:8443/mapArtImg/${id}?scale=4`}/>
+
+            <meta property="twitter:title" content={`Map Art de ${data ? data.uploader || "N/A" : ""}`}/>
             <meta property="twitter:image" content={`https://xbxt.xyz:8443/mapArtImg/${id}?scale=4`} />
+
             <title>Map Art</title>
 
             <section className="contentSection">

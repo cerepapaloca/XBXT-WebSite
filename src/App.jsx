@@ -12,6 +12,18 @@ const routes = [
     {
         path: '/mapArt/id/:uuid',
         Component: LazySingleMapArtPage
+    },
+    {
+        path: '/mapArt',
+        Component: LazyMapArtPage
+    },
+    {
+        path: '/commands',
+        Component: LazyCommandPage
+    },
+    {
+        path: '/',
+        Component: HomePage
     }
 ]
 

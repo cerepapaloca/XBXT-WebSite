@@ -86,23 +86,26 @@ export default function MapGallery() {
 
 
     return (
-        <section id="mapContainer" className="masonryContainer">
-            <div className="grid-sizer"></div>
-            {images.map((img, index) => (
-                <a
-                    key={index}
-                    className="grid-item refImg inbox transformUp"
-                    href={`/mapart/id/${img.name}`}
-                >
-                    <img
-                        src={img.url}
-                        alt={`Map Art - ${img.name}`}
-                        title={img.title}
-                        style={{ cursor: "pointer" }}
-                    />
-                </a>
-            ))}
-        </section>
+        <>
+            <section id="mapContainer" className="masonryContainer">
+                <div className="grid-sizer"></div>
+                {images.map((img, index) => (
+                    <a
+                        key={index}
+                        className="grid-item refImg inbox transformUp"
+                        href={`/mapart/id/${img.name}`}
+                    >
+                        <img
+                            src={img.url}
+                            alt={`Map Art - ${img.name}`}
+                            title={img.title}
+                            style={{ cursor: "pointer" }}
+                        />
+                    </a>
+                ))}
+            </section>
+        </>
+
     );
 
 }

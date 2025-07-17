@@ -68,7 +68,7 @@
 }
 #contentPlayer{
     max-height: 12rem;
-    overflow: scroll;
+    overflow: hidden;
 }
 #backGroudAux{
     display: none;
