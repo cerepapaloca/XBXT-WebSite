@@ -1,0 +1,54 @@
+.content{
+    min-height: auto;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.inbox{
+    flex-grow: 1;
+}
+section .subBox{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #262626;
+}
+.inbox{
+    min-width: 25rem;
+}
+.subBox h3{
+    margin: 0 0 0.5rem;
+}
+.subBox p{
+    margin: 0;
+    object-fit: fill;
+    display: block;
+}
+.subBox:hover{
+    background-color: #262626;
+}
+h1{
+    margin-bottom: 0.4rem;
+    max-width: max-content;
+}
+h2{
+    width: max-content;
+}
+.plugins{
+    columns: 2;
+    flex-wrap: wrap;
+}
+h4 a {
+    color: inherit;
+}
+@media (max-width: 75rem){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+body{
+    background-image: url("/public/img/background-About.webp");
+    background-attachment: fixed;
+    background-position: top;
+}

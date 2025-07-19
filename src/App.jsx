@@ -7,6 +7,7 @@ import HomePage from './pages/Home.jsx'
 const LazyCommandPage = lazy(() => import('./pages/Command.jsx'))
 const LazyMapArtPage = lazy(() => import('./pages/MapArt.jsx'))
 const LazySingleMapArtPage = lazy(() => import('./pages/SingleMapArt.jsx'))
+const LazyAboutPage = lazy(() => import('./pages/About'))
 
 const routes = [
     {
@@ -24,6 +25,10 @@ const routes = [
     {
         path: '/',
         Component: HomePage
+    },
+    {
+        path: '/about',
+        Component: LazyAboutPage
     }
 ]
 
@@ -37,6 +42,7 @@ function App() {
                 <Route path='/mapArt/' Component={LazyMapArtPage}/>
                 <Route path='/commands/' Component={LazyCommandPage} />
                 <Route path='/mapArt/id/:uuid' Component={LazySingleMapArtPage}/>
+                <Route path='/about' Component={LazyAboutPage}/>
                 <Route path='/' Component={HomePage}/>
             </Router>
         </Suspense>

@@ -9,13 +9,16 @@
     rgba(164, 164, 164, 0.53),
     transparent) calc((var(--x) * 1px) - (var(--size) * 0.5)) calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size) no-repeat fixed;
 }
+h4{
+    margin: 0 0 0.2rem 0;
+}
 h3 {
     margin-bottom: 0;
 }
 h2 {
     color: rgb(255, 255, 255);
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 0.4rem;
 }
 h1 {
     margin: auto;
